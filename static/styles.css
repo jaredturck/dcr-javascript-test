@@ -31,6 +31,20 @@ input, textarea, select {
   min-height: calc(100vh - 1rem);
   margin: 0 auto;
 }
+.main_form__data_table {
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+.main_form__data_table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.main_form__data_table table, .main_form__data_table td {
+  border: 1px solid black;
+}
+.main_form__data_table td {
+  padding: 0.2rem 0.5rem;
+}
 .main_form label {
   display: flex;
   align-items: center;

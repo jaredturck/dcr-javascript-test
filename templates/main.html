@@ -9,7 +9,7 @@
         <main>
             <div class="main_form__container">
                 <form class="main_form" id="graph-form">
-                    <label>By country:</label>
+                    <label for="graph-form__by-country">By country:</label>
                     <select id="graph-form__by-country">
                         <option> -------- </option>
                         <option value="1">Population size</option>
@@ -18,15 +18,27 @@
                         <option value="4">Number of languages</option>
                     </select> 
 
-                    <label>By region:</label>
-                    <select>
+                    <label for="by-region">By region:</label>
+                    <select id="by-region">
                         <option> -------- </option>
                         <option value="1">Number of countries in the region</option>
                         <option value="2">Number of unique timezones in the region</option>
                     </select>
                 </form>
                 <canvas id="bubble-chart" class="main_form__bubble-chart"></canvas>
-                <p id="output"></p>
+                <div class="main_form__data_table">
+                    <table id="data-table">
+                        <thead>
+                            <tr>
+                                <th>Country Code</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div> 
             </div>
         </main>
     </body>
