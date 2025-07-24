@@ -1,0 +1,44 @@
+@use 'sass:color';
+
+$teal: teal;
+$white: white;
+
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, textarea, select {
+    border: 1px solid $teal;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    background: $white;
+    box-shadow: 0px 0px 2px $teal;
+}
+
+.main_form {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    width: fit-content;
+    height: fit-content;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background: color.scale($teal, $lightness: 80%);
+    border: 1px solid $teal;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        min-height: calc(100vh - 1rem);
+        margin: 0 auto;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+}

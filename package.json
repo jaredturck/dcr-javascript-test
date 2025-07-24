@@ -1,0 +1,21 @@
+{
+  "name": "dcr-javascript-test",
+  "version": "1.0.0",
+  "description": "Thank you for taking the time to complete this exercise.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredturck/dcr-javascript-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jaredturck/dcr-javascript-test/issues"
+  },
+  "homepage": "https://github.com/jaredturck/dcr-javascript-test#readme"
+}
