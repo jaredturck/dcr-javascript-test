@@ -1,6 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
         <script src="script.js"></script>
     </head>
     <body>
@@ -23,6 +25,7 @@
                         <option value="2">Number of unique timezones in the region</option>
                     </select>
                 </form>
+                <canvas id="bubble-chart" class="main_form__bubble-chart"></canvas>
                 <p id="output"></p>
             </div>
         </main>

@@ -17,6 +17,7 @@ function fetch_bubble_chart_data(res, q) {
     output_json = JSON.stringify({'success' : true})
 
     let output_array = []
+    let max_value = 0;
     data.forEach(country => {
         let country_stats = {
             1 : country.population,
@@ -24,14 +25,22 @@ function fetch_bubble_chart_data(res, q) {
             3 : country.timezones.length,
             4 : country.languages.length
         }
+        value = country_stats[q];
+
+        if (value > max_value) {
+            max_value = value;
+        }
 
         output_array.push({
             'code' : country.alpha3Code,
-            'value' : country_stats[q]
+            'value' : value
         })
     })
     res.writeHead(200, {'content-Type' : 'application/json'});
-    res.end(JSON.stringify(output_array));
+    res.end(JSON.stringify({
+        'max_value' : max_value,
+        'data' : output_array
+    }));
 }
 
 http.createServer(function (req, res) {
